@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+
+  <!-- I'm using Tailwind Css -->
+
+  <body
+    class="p-0 m-0 w-screen h-screen flex flex-col justify-center items-center"
+  >
+    <div
+      class="w-[850px] h-[450px] bg-blue-400 flex flex-col justify-center space-y-10 items-center"
+    >
+      <div
+        id="main"
+        class="flex flex-col space-y-2 items-center text-center text-white"
+      ></div>
+      <div
+        id="extraInfo"
+        class="flex space-x-4 w-full flex-wrap text-xl justify-center px-5"
+      ></div>
+    </div>
+    <div
+      id="times"
+      class="mt-5 w-[850px] flex justify-center space-x-4 text-xl font-bold"
+    ></div>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
